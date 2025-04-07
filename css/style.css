@@ -1,0 +1,123 @@
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER SECTION */
+header {
+  background-color: #fff;
+  color: black;
+}
+
+header .wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.802rem;
+}
+
+/* IMAGES SECTION */
+
+/* MAIN SECTION */
+#sweets {
+  max-width: 940px;
+  margin: auto;
+}
+
+.sweets article h2 {
+  font-weight: 500;
+  font-size: 1.802rem;
+}
+.sweets article {
+  padding: 1em;
+}
+
+.sweets a:link, 
+.sweets a:visited {
+  display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  
+  margin-top: auto;
+  font-weight: 500;
+}
+
+.sweets a:hover,
+.sweets a:focus {
+  background-color: #fff;
+  color: #000;
+  
+}
+
+/* DOUGH SECTION */
+#dough {
+  max-width: 940px;
+  margin: auto;
+}
+
+.dough article h2 {
+  text-align: center;
+  font-size: 1.802rem;
+}
+
+.dough article p {
+  padding: 1em;
+}
+
+/* PEOPLE SECTION */
+#people {
+  max-width: 940px;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+}
+
+.people article h2 {
+  text-align: center;
+  font-size: 1,802rem;
+}
+
+/* TRY SECTION */
+
+#try h1 {
+  text-align: center;
+  font-size: 2.027rem;
+  font-weight: 800;
+}
+
+.try {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
