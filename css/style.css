@@ -1,5 +1,7 @@
 *{ 
   box-sizing: border-box;
+  padding: 0em;
+  margin: 0em;
 }
 
 body {
@@ -14,35 +16,53 @@ img {
 /* HEADER SECTION */
 header {
   background-color: #fff;
-  color: black;
-}
-
-header .wrapper {
-  max-width: 800px;
-  margin: auto;
+  color:#000;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+}
+
+.wrapper img {
+  max-width: 300px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: end;
   list-style: none;
   gap: 30px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
-  font-weight: 400;
-  font-size: 1.802rem;
+  color: #000;
+  font-size: 2.027rem;
 }
 
 /* IMAGES SECTION */
+
+#img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr 1fr 1fr;
+  justify-content: center;
+  padding: 1em;
+}
+
+.image img {
+  max-width: 300px;
+}
+
+
+
+
+
+
+
+
 
 /* MAIN SECTION */
 #sweets {
@@ -83,6 +103,7 @@ header nav ul li a {
 #dough {
   max-width: 940px;
   margin: auto;
+  padding: 1em;
 }
 
 .dough article h2 {
@@ -96,7 +117,7 @@ header nav ul li a {
 
 /* PEOPLE SECTION */
 #people {
-  max-width: 940px;
+  margin: auto;
   background-color: #000;
   color: #fff;
   padding: 1em;
@@ -104,10 +125,14 @@ header nav ul li a {
 
 .people article h2 {
   text-align: center;
-  font-size: 1,802rem;
+  font-size: 1.802rem;
 }
 
 /* TRY SECTION */
+
+#try {
+  padding: 1em;
+}
 
 #try h1 {
   text-align: center;
