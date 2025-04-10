@@ -52,22 +52,16 @@ header nav ul li a {
   padding: 1em;
 }
 
-.image img {
+.image  {
   max-width: 300px;
 }
-
-
-
-
-
-
 
 
 
 /* MAIN SECTION */
 #sweets {
   max-width: 940px;
-  margin: auto;
+  margin: 1em;
 }
 
 .sweets article h2 {
@@ -102,7 +96,7 @@ header nav ul li a {
 /* DOUGH SECTION */
 #dough {
   max-width: 940px;
-  margin: auto;
+  margin: 1em;
   padding: 1em;
 }
 
@@ -132,6 +126,7 @@ header nav ul li a {
 
 #try {
   padding: 1em;
+  margin: 1em;
 }
 
 #try h1 {
@@ -145,4 +140,20 @@ header nav ul li a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
+}
+
+.try .box-1 article, 
+.try .box-2 article,
+.try .box-3 article,
+.try .box-4 article {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
 }
