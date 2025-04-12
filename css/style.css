@@ -15,6 +15,7 @@ img {
 
 /* HEADER SECTION */
 header {
+  max-width: 1200px;
   background-color: #fff;
   color:#000;
 }
@@ -27,13 +28,16 @@ header {
 }
 
 .wrapper img {
-  max-width: 300px;
+  max-width: 1200px;
+  width: 200px;
+  justify-content: center;
 }
 
 header nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
+  justify-content: center;
 }
 
 header nav ul li a {
@@ -43,36 +47,43 @@ header nav ul li a {
 }
 
 /* IMAGES SECTION */
-#img {
-  margin: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  
+.image-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+
 }
 
-.images img {
+.main img {
+  width: 62%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  
+  margin-bottom: 10px;
+  padding: auto;
+  margin: auto;
+}
+
+.images-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.images-row img {
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.image-gallery img {
   border-radius: 10px;
 }
 
-.images .block-1 {
- grid-column: 1;
-}
 
-.images .block-2 {
-
-}
-
-.images .block-3 {
-
-}
-
-.images .block-4 {
-
-}
 /* MAIN SECTION */
 #sweets {
-  max-width: 940px;
+  max-width: 1200px;
   margin: 1em;
 }
 
@@ -107,12 +118,13 @@ header nav ul li a {
 
 /* DOUGH SECTION */
 #dough {
-  max-width: 940px;
+  background-color: #fff;
+  max-width: 1200px;
   margin: 1em;
   padding: 1em;
 }
 
-.dough article h2 {
+.dough h2 {
   text-align: center;
   font-size: 1.802rem;
 }
@@ -123,13 +135,14 @@ header nav ul li a {
 
 /* PEOPLE SECTION */
 #people {
+  max-width: 1200px;
   margin: auto;
   background-color: #000;
   color: #fff;
-  padding: 2em;
+  padding: 1em;
 }
 
-.people article h2 {
+.people h2 {
   text-align: center;
   font-size: 1.802rem;
   margin-top: auto;
@@ -138,6 +151,7 @@ header nav ul li a {
 /* TRY SECTION */
 
 #try {
+  max-width: 1200px;
   padding: 1em;
   margin-top: 2em;
 }
@@ -159,6 +173,7 @@ header nav ul li a {
 .try .box-2 article,
 .try .box-3 article,
 .try .box-4 article {
+  width: 300px;
   text-align: center;
   margin-top: 2em;
 }
@@ -169,9 +184,71 @@ header nav ul li a {
 }
 /* FOOTER */
 footer {
+  max-width: 1200px;
   background-color: #000;
   color: #fff;
   text-align: center;
   margin: 1em;
   padding: 1em;
+}
+
+
+
+/* MEDIA */
+
+
+@media (min-width:768px) {
+ /* IMAGES */
+ .image-gallery img {
+  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+ }
+
+
+
+
+ /* DOUGH SECTION */
+  .dough h2 {
+    margin-bottom: 1.5rem; 
+  }
+  
+  .body-copy {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .body-copy p {
+    flex: 1;
+  }
+
+ /* PEOPLE SECTION */
+ .body-copy-2 {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem;
+ }
+
+ /* TRY SECTION */
+ .try {
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .try .box-1 article, 
+.try .box-2 article,
+.try .box-3 article,
+.try .box-4 article {
+  width: 150px;
+  text-align: center;
+  margin: 1em auto;
+  gap: 30px;
+}
+
+
+
+@media (max-width:960px) {
+ 
 }
