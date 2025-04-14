@@ -60,7 +60,7 @@ header nav ul li a {
   justify-content: center;
   
   margin-bottom: 10px;
-  padding: auto;
+  padding: 0;
   margin: auto;
 }
 
@@ -203,8 +203,9 @@ footer {
  /* IMAGES */
  .image-gallery {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  grid-template-rows: repeat (2, 1fr);
+  grid-template-columns: 
+  repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   gap: 10px;
   margin-left: 100px;
@@ -285,7 +286,7 @@ footer {
   text-align: center;
   margin: 1em auto;
   gap: 30px;
-} 
+ } 
 }
  
 
