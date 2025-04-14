@@ -196,6 +196,10 @@ footer {
 
 /* MEDIA-1 */
 @media (min-width:768px) {
+  /* HEADER SECTION */
+  header {
+    max-width: 768px;
+  }
  /* IMAGES */
  .image-gallery {
   display: grid;
@@ -288,7 +292,8 @@ footer {
 
 /* MEDIA-2 */
 @media (max-width:960px) {
-  .products .sweets {
-    display: flex;
+  header {
+    max-width: 960px;
   }
 }
+
